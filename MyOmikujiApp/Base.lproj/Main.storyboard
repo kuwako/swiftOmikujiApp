@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyOmikujiApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,49 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRZ-J8-h4m">
+                                <rect key="frame" x="258" y="388" width="84" height="30"/>
+                                <state key="normal" title="運勢を占う!!"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="????..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFc-rd-n7I">
+                                <rect key="frame" x="212" y="261" width="175.5" height="77"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uPb-Ec-cBK">
+                                <rect key="frame" x="242" y="88" width="116" height="21"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日の運勢は..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vxo-pk-C5J">
+                                <rect key="frame" x="242" y="205" width="116" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ZvY-Qv-ubA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lRZ-J8-h4m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0kF-Lh-Hhn"/>
+                            <constraint firstItem="Vxo-pk-C5J" firstAttribute="centerX" secondItem="lRZ-J8-h4m" secondAttribute="centerX" id="9Ua-x9-VI0"/>
+                            <constraint firstItem="JFc-rd-n7I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GQa-mE-VfR"/>
+                            <constraint firstItem="Vxo-pk-C5J" firstAttribute="top" secondItem="uPb-Ec-cBK" secondAttribute="bottom" constant="96" id="JDb-Gh-E91"/>
+                            <constraint firstItem="Vxo-pk-C5J" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="205" id="L8m-I7-ADC"/>
+                            <constraint firstItem="JFc-rd-n7I" firstAttribute="top" secondItem="Vxo-pk-C5J" secondAttribute="bottom" constant="35" id="Sj5-1W-T6V"/>
+                            <constraint firstItem="Vxo-pk-C5J" firstAttribute="trailing" secondItem="uPb-Ec-cBK" secondAttribute="trailing" id="apG-sM-r5a"/>
+                            <constraint firstItem="Vxo-pk-C5J" firstAttribute="leading" secondItem="uPb-Ec-cBK" secondAttribute="leading" id="moB-KB-Gyb"/>
+                            <constraint firstItem="JFc-rd-n7I" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qoa-rn-LHe"/>
+                            <constraint firstItem="uPb-Ec-cBK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="68" id="r0e-wM-pk4"/>
+                            <constraint firstItem="lRZ-J8-h4m" firstAttribute="top" secondItem="JFc-rd-n7I" secondAttribute="bottom" constant="50" id="rBk-M2-bNQ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="378" y="318"/>
         </scene>
     </scenes>
 </document>
