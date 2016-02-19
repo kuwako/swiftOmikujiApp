@@ -20,9 +20,12 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRZ-J8-h4m">
                                 <rect key="frame" x="258" y="388" width="84" height="30"/>
                                 <state key="normal" title="運勢を占う!!"/>
+                                <connections>
+                                    <action selector="getOmikuji:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GgJ-5Y-r0i"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="????..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFc-rd-n7I">
-                                <rect key="frame" x="212" y="261" width="175.5" height="77"/>
+                                <rect key="frame" x="212" y="261" width="176" height="77"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="64"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -55,6 +58,9 @@
                             <constraint firstItem="lRZ-J8-h4m" firstAttribute="top" secondItem="JFc-rd-n7I" secondAttribute="bottom" constant="50" id="rBk-M2-bNQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myLavel" destination="JFc-rd-n7I" id="5HO-dm-JMe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
