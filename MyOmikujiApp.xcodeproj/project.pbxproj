@@ -484,6 +484,7 @@
 				6C3C60EB1C74774C00711ED6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C3C60EC1C74774C00711ED6 /* Build configuration list for PBXNativeTarget "MyOmikujiAppTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +493,7 @@
 				6C3C60EE1C74774C00711ED6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C3C60EF1C74774C00711ED6 /* Build configuration list for PBXNativeTarget "MyOmikujiAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +502,7 @@
 				6C3C60F11C74774C00711ED6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
